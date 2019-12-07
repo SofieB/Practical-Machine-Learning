@@ -2,7 +2,9 @@
 title: "Machine Learning Assignment"
 author: "SofieB"
 date: "12/4/2019"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -33,7 +35,7 @@ traindata <- read.csv(file ="training.csv", na.strings = c("", "#DIV/0!","NA"))
 testdata <- read.csv(file ="testing.csv", na.strings = c("", "#DIV/0!","NA"))
 dim(traindata)
 dim(testdata)
-summary(traindata)
+str(traindata)
 ```
 
 ### Cleaning
